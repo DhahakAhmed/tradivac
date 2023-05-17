@@ -8,7 +8,6 @@ package edu.tradivac.entities;
  *
  * @author devhk
  */
-public class Paquet {
+public class ServiceHebergement {
     
 }
-

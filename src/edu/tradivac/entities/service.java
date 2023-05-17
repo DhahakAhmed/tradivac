@@ -8,6 +8,7 @@ package edu.tradivac.entities;
  *
  * @author devhk
  */
-public class service {
+public class Service {
     
 }
+

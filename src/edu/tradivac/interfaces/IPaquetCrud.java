@@ -6,8 +6,8 @@ package edu.tradivac.interfaces;
 
 /**
  *
- * @author devhk
+ * @author wassou
  */
-public interface ICrud {
+public interface IPaquetCrud {
     
 }

@@ -6,8 +6,8 @@ package edu.tradivac.entities;
 
 /**
  *
- * @author devhk
+ * @author wassou
  */
-public class notes_paquet {
+public class User {
     
 }

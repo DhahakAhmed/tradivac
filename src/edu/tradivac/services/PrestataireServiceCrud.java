@@ -8,6 +8,6 @@ package edu.tradivac.services;
  *
  * @author devhk
  */
-public class foodCrud {
+public class PrestataireServiceCrud {
     
 }
