@@ -8,7 +8,7 @@ package edu.tradivac.entities;
  *
  * @author devhk
  */
-public class Admin {
+public class Admin extends User {
     
 }
 

@@ -8,6 +8,6 @@ package edu.tradivac.entities;
  *
  * @author devhk
  */
-public class PrestataireService {
+public class PrestataireService extends User {
     
 }
