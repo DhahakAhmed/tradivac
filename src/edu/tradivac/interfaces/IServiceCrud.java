@@ -4,10 +4,13 @@
  */
 package edu.tradivac.interfaces;
 
+import edu.tradivac.entities.Service;
+
 /**
  *
  * @author wassou
+ * @param <T>
  */
-public interface IServiceCrud {
+public interface IServiceCrud<T extends Service> {
     
 }

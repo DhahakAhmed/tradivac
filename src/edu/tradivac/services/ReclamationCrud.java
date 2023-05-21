@@ -4,10 +4,12 @@
  */
 package edu.tradivac.services;
 
+import edu.tradivac.interfaces.IReclamationCrud;
+
 /**
  *
  * @author devhk
  */
-public class ReclamationCrud {
+public class ReclamationCrud implements IReclamationCrud {
     
 }

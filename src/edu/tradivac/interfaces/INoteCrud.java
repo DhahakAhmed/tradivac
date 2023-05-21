@@ -4,10 +4,13 @@
  */
 package edu.tradivac.interfaces;
 
+import edu.tradivac.entities.Note;
+
 /**
  *
  * @author wassou
+ * @param <T>
  */
-public interface INoteCrud {
+public interface INoteCrud<T extends Note> {
     
 }

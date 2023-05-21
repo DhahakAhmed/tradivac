@@ -4,10 +4,13 @@
  */
 package edu.tradivac.services;
 
+import edu.tradivac.entities.NotePaquet;
+import edu.tradivac.interfaces.INoteCrud;
+
 /**
  *
  * @author devhk
  */
-public class NotePaquetCrud {
+public class NotePaquetCrud implements INoteCrud<NotePaquet> {
     
 }

@@ -2,12 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package edu.tradivac.entities;
+package edu.tradivac.entities.enums;
 
 /**
  *
- * @author devhk
+ * @author wassou
  */
-public class ServiceRestauration extends Service {
-    
+public enum UserLanguage {
+    ENGLISH,
+    FRANCAIS
 }

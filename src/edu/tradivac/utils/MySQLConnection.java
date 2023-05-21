@@ -15,9 +15,9 @@ import java.util.Objects;
  */
 public class MySQLConnection {
     
-    private static final String DATABASE_URL= "mysql://root:@127.0.0.1:3306/tradivac?";
-    private static final String DATABASE_USER= "root";
-    private static final String DATABASE_PWD= "";
+    private static final String DATABASE_URL = "mysql://root:@127.0.0.1:3306/tradivac?";
+    private static final String DATABASE_USER = "root";
+    private static final String DATABASE_PWD = "";
     
     private Connection connection = null;
     

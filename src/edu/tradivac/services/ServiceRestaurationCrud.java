@@ -4,10 +4,13 @@
  */
 package edu.tradivac.services;
 
+import edu.tradivac.entities.ServiceRestauration;
+import edu.tradivac.interfaces.IServiceCrud;
+
 /**
  *
  * @author wassou
  */
-public class ServiceRestaurationCrud {
+public class ServiceRestaurationCrud implements IServiceCrud<ServiceRestauration> {
     
 }
