@@ -23,7 +23,7 @@ public class MySQLConnection {
     
     public static MySQLConnection instance = null;
     
-    public static synchronized MySQLConnection getInstance() 
+    public static synchronized MySQLConnection getInstance()
     {
         if (Objects.isNull(instance))
             instance = new MySQLConnection();
