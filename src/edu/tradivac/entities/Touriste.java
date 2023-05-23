@@ -19,6 +19,11 @@ public class Touriste extends User {
     private String passportId;
     private String cinPicture;
     private String cinId;
+    
+    public Touriste()
+    {
+        super();
+    }
 
     public Touriste(String passportPicture, String passportId, String cinPicture, String cinId, String firstName, String lastName, String userName, UserSexe sexe, String email, String phone, String address, String country, UserLanguage language, String profilePicture, Boolean isOnline, UserStatus status, Date creationDate, Date updateDate, Date birthDate, UserRole role) {
         super(firstName, lastName, userName, sexe, email, phone, address, country, language, profilePicture, isOnline, status, creationDate, updateDate, birthDate, role);

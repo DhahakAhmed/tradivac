@@ -21,6 +21,11 @@ public class PrestataireService extends User {
     private String cinId;
     private String driverLicensePicture;
     private String driverLicenseId;
+    
+    public PrestataireService()
+    {
+        super();
+    }
 
     public PrestataireService(String passportPicture, String passportId, String cinPicture, String cinId, String driverLicensePicture, String driverLicenseId, String firstName, String lastName, String userName, UserSexe sexe, String email, String phone, String address, String country, UserLanguage language, String profilePicture, Boolean isOnline, UserStatus status, Date creationDate, Date updateDate, Date birthDate, UserRole role) {
         super(firstName, lastName, userName, sexe, email, phone, address, country, language, profilePicture, isOnline, status, creationDate, updateDate, birthDate, role);

@@ -34,6 +34,8 @@ public class User {
     private Date updateDate;
     private Date birthDate;
     private UserRole role;
+    
+    public User () {}
 
     public User(String firstName, String lastName, String userName, UserSexe sexe, String email, String phone, String address, String country, UserLanguage language, String profilePicture, Boolean isOnline, UserStatus status, Date creationDate, Date updateDate, Date birthDate, UserRole role) {
         this.firstName = firstName;
