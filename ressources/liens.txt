@@ -1,0 +1,10 @@
+## CRUD Service recherche:
+
+# Liens qui explique les different types des maisons utilisees:
+
+1 - https://eldorado-immobilier.com/definition-t1t2t3t4-studio-quelle-surface-et-combien-de-pieces/
+2 - https://etablissement.org/ontario/logement/acheter-un-logement/renseignements-de-base/quels-sont-les-differents-types-d-habitations-disponibles/
+3 - https://www23.statcan.gc.ca/imdb/p3VD_f.pl?Function=getVD&TVD=144257&CVD=144258&CLV=0&MLV=2&D=1
+4 - https://location-immobilier.ooreka.fr/astuce/voir/679139/classification-des-logements
+5 - https://www.maisons-mca.com/maison-neuve/les-types-de-maisons-neuves/
+
