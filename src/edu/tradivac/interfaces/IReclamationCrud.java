@@ -4,10 +4,20 @@
  */
 package edu.tradivac.interfaces;
 
+import java.util.List;
+
 /**
  *
- * @author wassou
+ * @author meriem
+ * @param <T>
  */
-public interface IReclamationCrud {
+public interface IReclamationCrud<T> {
+         public void addEntity(T t);
+    
+    public List<T> displayEntities();
+    public void updateEntity(T t);
+    public void deleteEntity(int id);
+
+
     
 }
