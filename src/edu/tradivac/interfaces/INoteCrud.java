@@ -4,10 +4,24 @@
  */
 package edu.tradivac.interfaces;
 
-/**
- *
- * @author wassou
- */
-public interface INoteCrud {
+import java.util.List;
+
+public interface INoteCrud <T >{
+     public void addEntity (T t);
+     public void updateteEntity(T t);
+      public void deleteEntity(T t);
+     public  List<T> displayEntities();
+
+   
+
+    
+   
+    
     
 }
+
+
+
+
+
+
