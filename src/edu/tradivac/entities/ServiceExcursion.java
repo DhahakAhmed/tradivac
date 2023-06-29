@@ -13,6 +13,7 @@ import java.sql.Date;
 public class ServiceExcursion {
     private int id_service;
     private int id_user;
+    private String nom_service;
     private String type;
     private String description;
     private double prix;
@@ -23,22 +24,23 @@ public class ServiceExcursion {
     private boolean excursion_foret;
     private String excursion_type;
 
-    public ServiceExcursion(){
-    
-    };
-    
-    public ServiceExcursion(String type,int id_user,String description, double prix, String destination, Date date_debut, Date date_fin, boolean excursion_plage, boolean excursion_foret, String excursion_type ){
-        this.type = type;
+    public ServiceExcursion() {
+    }
+
+    public ServiceExcursion(int id_service, int id_user, String nom_service, String type, String description, double prix, String destination, Date date_debut, Date date_fin, boolean excursion_plage, boolean excursion_foret, String excursion_type) {
+        this.id_service = id_service;
         this.id_user = id_user;
+        this.nom_service = nom_service;
+        this.type = type;
         this.description = description;
         this.prix = prix;
+        this.destination = destination;
         this.date_debut = date_debut;
         this.date_fin = date_fin;
         this.excursion_plage = excursion_plage;
         this.excursion_foret = excursion_foret;
         this.excursion_type = excursion_type;
-        
-    };
+    }
 
     /**
      * @return the id_service
@@ -52,6 +54,34 @@ public class ServiceExcursion {
      */
     public void setId_service(int id_service) {
         this.id_service = id_service;
+    }
+
+    /**
+     * @return the id_user
+     */
+    public int getId_user() {
+        return id_user;
+    }
+
+    /**
+     * @param id_user the id_user to set
+     */
+    public void setId_user(int id_user) {
+        this.id_user = id_user;
+    }
+
+    /**
+     * @return the nom_service
+     */
+    public String getNom_service() {
+        return nom_service;
+    }
+
+    /**
+     * @param nom_service the nom_service to set
+     */
+    public void setNom_service(String nom_service) {
+        this.nom_service = nom_service;
     }
 
     /**
@@ -180,12 +210,6 @@ public class ServiceExcursion {
         this.excursion_type = excursion_type;
     }
 
-    /**
-     * @return the id_user
-     */
-    public int getId_user() {
-        return id_user;
-    }
-
+    
     
 }

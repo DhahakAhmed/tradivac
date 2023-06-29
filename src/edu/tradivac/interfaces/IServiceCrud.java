@@ -21,5 +21,4 @@ public interface IServiceCrud<T> {
     
     public List<T> displayEntities();
     
-    //public void deleteEntity(T t);
 }

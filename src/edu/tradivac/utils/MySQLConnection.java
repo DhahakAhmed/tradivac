@@ -14,8 +14,8 @@ import java.sql.SQLException;
  */
 public class MySQLConnection {
     private String url="jdbc:mysql://localhost:3306/tradivac";
-    private String login="root";
-    private String pwd="youssef177";
+    private String login="root2";
+    private String pwd="rootmdp";
     Connection cnx;
     
     public MySQLConnection(){

@@ -4,10 +4,34 @@
  */
 package edu.tradivac.services;
 
+import edu.tradivac.entities.Service;
+import edu.tradivac.interfaces.IServiceCrud;
+import java.util.List;
+
 /**
  *
  * @author wassou
  */
-public class ServiceRestaurationCrud {
+public class ServiceRestaurationCrud implements IServiceCrud<Service> {
+
+    @Override
+    public void addEntity(Service t) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void deleteEntity(Service t) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void updateEntity(Service t) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public List<Service> displayEntities() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
