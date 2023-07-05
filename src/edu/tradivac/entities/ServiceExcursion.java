@@ -8,6 +8,6 @@ package edu.tradivac.entities;
  *
  * @author devhk
  */
-public class ServiceExcursion extends Service {
+public class ServiceExcursion {
     
 }

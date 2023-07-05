@@ -8,6 +8,6 @@ package edu.tradivac.entities;
  *
  * @author devhk
  */
-public class ServiceRestauration extends Service {
+public class ServiceRestauration {
     
 }

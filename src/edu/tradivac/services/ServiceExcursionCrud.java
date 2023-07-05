@@ -4,13 +4,10 @@
  */
 package edu.tradivac.services;
 
-import edu.tradivac.entities.ServiceExcursion;
-import edu.tradivac.interfaces.IServiceCrud;
-
 /**
  *
  * @author devhk
  */
-public class ServiceExcursionCrud implements IServiceCrud<ServiceExcursion>{
+public class ServiceExcursionCrud {
     
 }

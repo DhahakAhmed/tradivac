@@ -8,6 +8,6 @@ package edu.tradivac.entities;
  *
  * @author devhk
  */
-public class NotePaquet extends Note {
+public class NotePaquet {
     
 }

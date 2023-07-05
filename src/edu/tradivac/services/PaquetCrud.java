@@ -4,12 +4,10 @@
  */
 package edu.tradivac.services;
 
-import edu.tradivac.interfaces.IPaquetCrud;
-
 /**
  *
  * @author devhk
  */
-public class PaquetCrud implements IPaquetCrud {
+public class PaquetCrud {
     
 }

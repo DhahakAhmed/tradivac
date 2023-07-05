@@ -4,13 +4,10 @@
  */
 package edu.tradivac.services;
 
-import edu.tradivac.entities.ServiceHebergement;
-import edu.tradivac.interfaces.IServiceCrud;
-
 /**
  *
  * @author devhk
  */
-public class ServiceHebergementCrud implements IServiceCrud<ServiceHebergement> {
+public class ServiceHebergementCrud {
     
 }
