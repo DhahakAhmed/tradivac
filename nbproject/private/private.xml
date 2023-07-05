@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/activities/activities.fxml</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/menuAdmin/createActivity/CreateActivityController.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/BBDD/db.sql</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/menuAdmin/list/ListController.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/entities/DetailsPack.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/bda/TypesDAO.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/login/login/loginController.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/bda/ActivityDAO.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/login/register/registerController.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/activities/ActivitiesController.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/entities/Pack.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/details/DetailsController.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/menuAdmin/list/list.fxml</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/bda/PackDAO.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/card/CreateTicketPDF.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/cart/cart.fxml</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/Main.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/interfaces/IPaquetCrud.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/bda/ConexionDAO.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/entities/Touriste.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/bda/UserDAO.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/home/home.fxml</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/services/PaquetCrud.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/entities/Admin.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/menuAdmin/createActivity/createActivity.fxml</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/bda/DetailsPackDAO.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/cart/CartController.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/entities/Activity.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/menuAdmin/menuAdminController.java</file>
+            <file>file:/C:/Users/user/Desktop/tradivac/src/edu/tradivac/gui/home/HomeController.java</file>
+        </group>
+    </open-files>
+</project-private>
