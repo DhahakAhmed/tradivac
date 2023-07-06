@@ -10,6 +10,9 @@ import edu.tradivac.utils.MySQLConnection;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+import edu.tradivac.utils.mailAPI;
+import edu.tradivac.utils.smsAPI;
+
 
 /**
  *
@@ -29,9 +32,10 @@ public class Main {
          
         List<ServiceExcursion>  listSEC = new ArrayList<>();
         listSEC = SEC.displayEntities();
-        System.out.println(listSEC.get(1).getDestination());
-        
- 
+        System.out.println(listSEC.get(0).getDestination());
+        //System.out.println(smsAPI.sendSMS());
+        mailAPI.send("service.tradivac@gmail.com","bdrpqdsliuycjxww","ahmeddhk2001@gmail.com","hello javatpoint","How r u?");  
+         //mailAPI.send("tradivac@ahmeddhahak.com","TradivacMdp177@","devhkahmed@gmail.com","hello javatpoint","How r u?");  
             
     //sendEmailService.send("service.tradivac@gmail.com","tradivacmdp","devhkahmed@gmail.com","hello javatpoint","How r u?");  
     }

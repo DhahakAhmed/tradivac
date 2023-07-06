@@ -60,10 +60,10 @@ public class ListeServiceController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         
         // ADD OPTIONS TO CHOCIEBOX
-        typeServiceChoice.getItems().add("Excursion");
-        typeServiceChoice.getItems().add("Hebergement");
-        typeServiceChoice.getItems().add("Restauration");
-        typeServiceChoice.setValue("Excursion");
+        typeServiceChoice.getItems().add("excursion");
+        typeServiceChoice.getItems().add("hebergement");
+        typeServiceChoice.getItems().add("restauration");
+        typeServiceChoice.setValue("excursion");
         
         // CREATE COLUMNS TO TABLEVIEW
         TableColumn<ServiceList, String> column1 = new TableColumn<>("Nom Service");
@@ -179,27 +179,16 @@ tableViewService.getColumns().addAll(column1,column2,column3,column4,column5,col
     @FXML
     private void ouvrirAjoutService(ActionEvent event) {
         String typeServiceToAdd = (String) typeServiceChoice.getValue();
-        switch (typeServiceToAdd) {
-            case "Excursion":
-                System.out.println("Ouvrir excursion");
                  try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("ajoutService.fxml"));
                     Stage stage = (Stage) ajouterServiceBtn.getScene().getWindow();
                     Scene scene = new Scene(loader.load());
                     stage.setScene(scene);
+                    AjoutServiceController controller = loader.<AjoutServiceController>getController();
+                    controller.setServiceType(typeServiceToAdd);
                 }catch (IOException io){
                      System.out.println(io.getMessage());
                 }
-                break;
-            case "Hebergement":
-                System.out.println("Pas encore developpe");
-                break;
-            case "Restauration":
-                System.out.println("Pas encore developpe");
-                break;
-            default:
-                break;
-        }
     }
     ServiceExcursion objToUpdate = null;
 

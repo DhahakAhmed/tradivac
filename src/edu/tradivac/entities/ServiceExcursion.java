@@ -20,6 +20,8 @@ public class ServiceExcursion {
     private String destination;
     private Date date_debut;
     private Date date_fin;
+    private int duree;
+    private int nb_trimestre;
     private boolean excursion_plage;
     private boolean excursion_foret;
     private String excursion_type;
@@ -169,6 +171,34 @@ public class ServiceExcursion {
     }
 
     /**
+     * @return the duree
+     */
+    public int getDuree() {
+        return duree;
+    }
+
+    /**
+     * @param duree the duree to set
+     */
+    public void setDuree(int duree) {
+        this.duree = duree;
+    }
+
+    /**
+     * @return the nb_trimestre
+     */
+    public int getNb_trimestre() {
+        return nb_trimestre;
+    }
+
+    /**
+     * @param nb_trimestre the nb_trimestre to set
+     */
+    public void setNb_trimestre(int nb_trimestre) {
+        this.nb_trimestre = nb_trimestre;
+    }
+
+    /**
      * @return the excursion_plage
      */
     public boolean isExcursion_plage() {
@@ -209,7 +239,10 @@ public class ServiceExcursion {
     public void setExcursion_type(String excursion_type) {
         this.excursion_type = excursion_type;
     }
+    
+    
 
+    
     
     
 }

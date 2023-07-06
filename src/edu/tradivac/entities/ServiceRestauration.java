@@ -11,28 +11,37 @@ import java.sql.Date;
  * @author devhk
  */
 public class ServiceRestauration {
-    private int id_service;
+     private int id_service;
     private int id_user;
+    private String nom_service;
     private String type;
     private String description;
     private double prix;
     private String destination;
     private Date date_debut;
     private Date date_fin;
+    private int duree;
+    private int nb_trimestre;
     private String restauration_type;
     private boolean restauration_repas_sur_demande;
     private boolean restauration_dejeuner;
     private boolean restauration_diner;
 
-    public ServiceRestauration(int id_service, int id_user, String type, String description, double prix, String destination, Date date_debut, Date date_fin, String restauration_type, boolean restauration_repas_sur_demande, boolean restauration_dejeuner, boolean restauration_diner) {
+    public ServiceRestauration() {
+    }
+
+    public ServiceRestauration(int id_service, int id_user, String nom_service, String type, String description, double prix, String destination, Date date_debut, Date date_fin, String restauration_type, boolean restauration_repas_sur_demande, boolean restauration_dejeuner, boolean restauration_diner) {
         this.id_service = id_service;
         this.id_user = id_user;
+        this.nom_service = nom_service;
         this.type = type;
         this.description = description;
         this.prix = prix;
         this.destination = destination;
         this.date_debut = date_debut;
         this.date_fin = date_fin;
+        this.duree = duree;
+        this.nb_trimestre = nb_trimestre;
         this.restauration_type = restauration_type;
         this.restauration_repas_sur_demande = restauration_repas_sur_demande;
         this.restauration_dejeuner = restauration_dejeuner;
@@ -65,6 +74,20 @@ public class ServiceRestauration {
      */
     public void setId_user(int id_user) {
         this.id_user = id_user;
+    }
+
+    /**
+     * @return the nom_service
+     */
+    public String getNom_service() {
+        return nom_service;
+    }
+
+    /**
+     * @param nom_service the nom_service to set
+     */
+    public void setNom_service(String nom_service) {
+        this.nom_service = nom_service;
     }
 
     /**
@@ -152,6 +175,34 @@ public class ServiceRestauration {
     }
 
     /**
+     * @return the duree
+     */
+    public int getDuree() {
+        return duree;
+    }
+
+    /**
+     * @param duree the duree to set
+     */
+    public void setDuree(int duree) {
+        this.duree = duree;
+    }
+
+    /**
+     * @return the nb_trimestre
+     */
+    public int getNb_trimestre() {
+        return nb_trimestre;
+    }
+
+    /**
+     * @param nb_trimestre the nb_trimestre to set
+     */
+    public void setNb_trimestre(int nb_trimestre) {
+        this.nb_trimestre = nb_trimestre;
+    }
+
+    /**
      * @return the restauration_type
      */
     public String getRestauration_type() {
@@ -206,6 +257,6 @@ public class ServiceRestauration {
     public void setRestauration_diner(boolean restauration_diner) {
         this.restauration_diner = restauration_diner;
     }
-            
+    
     
 }

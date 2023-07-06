@@ -94,7 +94,7 @@ public class ServiceExcursionCrud implements IServiceCrud<ServiceExcursion>{
             
             while(Rs.next()){
                 ServiceExcursion p = new ServiceExcursion();
-                if(Rs.getString("type").equalsIgnoreCase("excursion")){
+                if(Rs.getString("type").equalsIgnoreCase("excursion") || true){
                     p.setId_service(Rs.getInt(1)); // Choose nb column
                     p.setNom_service(Rs.getString("nom_service"));
                     p.setType(Rs.getString("type"));
