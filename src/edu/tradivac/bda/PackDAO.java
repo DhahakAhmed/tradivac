@@ -15,7 +15,7 @@ import edu.tradivac.entities.Pack;
 
 /**
  *
- * @author itoga
+ * @author Meriem
  */
 public class PackDAO {
 

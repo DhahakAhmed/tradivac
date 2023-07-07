@@ -146,7 +146,8 @@ public class DetailsController {
 
         cbHoraFin.setItems(listaHoras);
         cbHoraFin.getSelectionModel().selectFirst();
-
+            
+        System.out.println("pack.getstartDate()"+pack.getstartDate()+" // pack.getfinalDate() " +pack.getfinalDate());
         dpstartDate.setDayCellFactory(tools.getDayCellFactory(pack.getstartDate(), pack.getfinalDate()));
         spiPlazas.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10));
 

@@ -58,7 +58,7 @@ public class registerController {
         //Inicio la conexión
         try {
 
-            if (connect.connect("root", "", "touristpacks")) {
+            if (connect.connect("root", "", "tradivac")) {
                 conexion = connect.getConexion();
                 userDAO.setConex(conexion);
             }

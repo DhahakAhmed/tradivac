@@ -6,7 +6,7 @@
 package edu.tradivac.entities;
 /**
  *
- * @author itoga
+ * @author Meriem
  */
 public class Activity {
 

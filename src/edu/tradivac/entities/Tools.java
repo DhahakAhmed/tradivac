@@ -20,7 +20,7 @@ import org.controlsfx.control.Notifications;
 
 /**
  *
- * @author itoga
+ * @author Meriem
  */
 public class Tools {
 

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author itoga
+ * @author Meriem
  */
 public class Pack {
     

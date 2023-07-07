@@ -33,21 +33,21 @@ public class loginController {
     @FXML
     private Pane menu;
 
-    private String mailUser="admin@admin.com";
+    private String mailUser="wassou93@live.fr";
     private String password="123456";
 
     public void initialize() {
           try {
 
-            if (connect.connect("root", "", "touristpacks")) {
+            if (connect.connect("root", "", "tradivac")) {
                 conexion = connect.getConexion();
                 userDAO.setConex(conexion);
                    
                 if (userDAO.checkuserYaRegistrado(mailUser)) {
                     if(userDAO.checkPWD(password)){
-                        goToHomePage();
+                       goToHomePage();
                     }else{
-                        tools.showAlertErr("password incorrecta, ¡inténtelo de nuevo!");
+                        System.out.println("User not found");
                     }
                
             }
@@ -57,7 +57,6 @@ public class loginController {
             System.out.println("exception : ");
             System.out.println(ex.getMessage());
             
-            tools.showAlertErr("No se ha establecido conexión con la base de datos");
         }
         
     }

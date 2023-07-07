@@ -219,7 +219,7 @@ public class ActivitiesController {
         labelDescription.setWrapText(true);
         labelDescription.setStyle("-fx-text-fill:white");
 
-        addbutton.setText("Ajouter au paniert");
+        addbutton.setText("Ajouter au panier");
         addbutton.setMinSize(50, 25);
         addbutton.setLayoutX(47);
         addbutton.setLayoutY(135);
@@ -315,7 +315,7 @@ public class ActivitiesController {
 
         });
 
-        pane.setStyle("-fx-background-color: #8C8C8C; -fx-background-radius: 15");
+        pane.setStyle("-fx-background-color: #D3D3D3; -fx-background-radius: 15");
         pane.getChildren().add(image);
         pane.getChildren().add(labelTitle);
         pane.getChildren().add(labelDescription);

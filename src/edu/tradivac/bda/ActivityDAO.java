@@ -14,7 +14,7 @@ import edu.tradivac.entities.Activity;
 
 /**
  *
- * @author itoga
+ * @author Meriem
  */
 public class ActivityDAO {
 
