@@ -7,11 +7,11 @@ package edu.tradivac.entities;
 
 /**
  *
- * @author itoga
+ * @author Meriem
  */
 public class User {
     private int id = 0;
-    private String rol = "client";
+    private String rol = "admin ";
     private String nombre;
     private String mail;
     private int phone;

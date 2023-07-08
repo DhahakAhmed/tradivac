@@ -13,7 +13,7 @@ import javafx.scene.image.ImageView;
 
 /**
  *
- * @author Juan Carlos
+ * @author Meriem
  */
 public class DetailsPack {
 

@@ -15,7 +15,7 @@ import edu.tradivac.entities.DetailsPack;
 
 /**
  *
- * @author Juan Carlos
+ * @author Meriem
  */
 public class DetailsPackDAO {
 

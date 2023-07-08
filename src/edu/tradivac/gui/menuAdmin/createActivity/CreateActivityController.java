@@ -147,9 +147,9 @@ public class CreateActivityController {
 
     //Seleccion de imagen con FileChooser
     @FXML
-    private void elegirImagen(ActionEvent event) {
+    private void choisissezImage(ActionEvent event) {
         try {
-            img = loadImagen();
+            img = loadImage();
             rutaIMG.setText(img.toString());
             imgView.setImage(new Image("/edu/tradivac/img/" + img.toString()));
         } catch (Exception e) {
@@ -157,7 +157,7 @@ public class CreateActivityController {
         }
     }
 
-    public Path loadImagen() throws Exception {
+    public Path loadImage() throws Exception {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File("src/edu/tradivac//img/"));
         File file = fileChooser.showOpenDialog(null);
@@ -167,7 +167,7 @@ public class CreateActivityController {
     }
 
     @FXML
-    private void createactivity(ActionEvent event) {
+    private void createActivity(ActionEvent event) {
         if (checkErrores()) {
             try {
                 int idactivity = activityDAO.ultimoIdactivity();
@@ -195,11 +195,11 @@ public class CreateActivityController {
         String idquality = "cal5";
         Node nodoQueHaGeneradoEvento = (Node) event.getSource();
         idquality = nodoQueHaGeneradoEvento.getId();
-        estiloEstrellas(idquality);
+        stylestars(idquality);
         
     }
 
-    private void estiloEstrellas(String idquality) {
+    private void stylestars(String idquality) {
         switch (idquality) {
             case "cal1":
                 cal5.setStyle("-fx-fill: white; -fx-stroke: #0073ff");

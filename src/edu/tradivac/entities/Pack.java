@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author itoga
+ * @author Meriem
  */
 public class Pack {
     
@@ -27,7 +27,7 @@ public class Pack {
     private LocalDate finalDate;
     private LocalTime tiempoFin;
     private int iduser;
-    private ArrayList<DetailsPack> listaactivities = new ArrayList<>();
+    private ArrayList<DetailsPack> listActivities = new ArrayList<>();
     private static int totalPacks = 1;
 
     public Pack(String nombre, LocalDate startDate, LocalDate finalDate, String description) {
@@ -91,7 +91,7 @@ public class Pack {
     }
 
     public ArrayList<DetailsPack> getListaactivities() {
-        return listaactivities;
+        return listActivities;
     }
     
     //sets
@@ -146,13 +146,13 @@ public class Pack {
     }
 
     public void calcularpriceTotal(){
-        for (DetailsPack linea : listaactivities) {
+        for (DetailsPack linea : listActivities) {
             price += linea.getPrice();
         }
     }
     
     public void addcart(DetailsPack linea){
-        listaactivities.add(linea);
+        listActivities.add(linea);
     }
     
 }

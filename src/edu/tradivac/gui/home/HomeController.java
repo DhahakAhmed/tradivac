@@ -146,7 +146,7 @@ public class HomeController {
                     activitiesController.setPack(pack);
                     activitiesController.setTools(tools);
                     activitiesController.setType(type);
-                    activitiesController.rellenarConPanes();
+                    activitiesController.remplirDePains();
 
                     menu.getChildren().addAll(root);
                 } catch (IOException ex) {

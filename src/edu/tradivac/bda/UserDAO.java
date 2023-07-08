@@ -15,7 +15,7 @@ import edu.tradivac.entities.User;
 
 /**
  *
- * @author itoga
+ * @author Meriem
  */
 public class UserDAO {
     private Connection conex;
@@ -47,15 +47,18 @@ public class UserDAO {
     }
     
     public boolean checkuserYaRegistrado(String mail) throws SQLException{
-        String sql = "SELECT mail FROM users WHERE mail = ?";
+        String sql = "SELECT email FROM user WHERE email = ?";
 
         PreparedStatement ps = conex.prepareCall(sql,
                 ResultSet.TYPE_SCROLL_INSENSITIVE,
                 ResultSet.CONCUR_READ_ONLY);
         ps.setString(1, mail);
+        
         ResultSet rs = ps.executeQuery();
         while (rs.next()) {
-            if(rs.getString("mail").equalsIgnoreCase(mail)){
+            if(rs.getString("email").equalsIgnoreCase(mail)){
+                 System.out.println(rs.getString("email"));
+           
                 return true;
             }
         }
@@ -63,7 +66,7 @@ public class UserDAO {
     }
     
     public boolean checkPWD(String pwd) throws SQLException{
-        String sql = "SELECT password FROM users WHERE password = ?";
+        String sql = "SELECT password FROM user WHERE password = ?";
 
         PreparedStatement ps = conex.prepareCall(sql,
                 ResultSet.TYPE_SCROLL_INSENSITIVE,
@@ -95,7 +98,7 @@ public class UserDAO {
     }
     
     public int getIduser(String mail) throws SQLException{
-        String sql = "SELECT id FROM users WHERE mail = ?";
+        String sql = "SELECT id_user FROM user WHERE email = ?";
 
         PreparedStatement ps = conex.prepareCall(sql,
                 ResultSet.TYPE_SCROLL_INSENSITIVE,
@@ -104,13 +107,13 @@ public class UserDAO {
         ResultSet rs = ps.executeQuery();
         int id = 0;
         while (rs.next()) {
-            id = rs.getInt("id");
+            id = rs.getInt("id_user");
         }
         return id;
     }
     
     public String getRol(int iduser) throws SQLException{
-        String sql = "SELECT rol FROM users WHERE id = ?;";
+        String sql = "SELECT role FROM user WHERE id_user = ?;";
 
         PreparedStatement ps = conex.prepareCall(sql,
                 ResultSet.TYPE_SCROLL_INSENSITIVE,
@@ -119,7 +122,7 @@ public class UserDAO {
         ResultSet rs = ps.executeQuery();
         String rol = "";
         while (rs.next()) {
-            rol = rs.getString("rol");
+            rol = rs.getString("role");
         }
         return rol;
     }

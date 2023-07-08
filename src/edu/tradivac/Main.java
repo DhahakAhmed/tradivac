@@ -14,7 +14,7 @@ import edu.tradivac.gui.home.HomeController;
 import static javafx.application.Application.launch;
 
 public class Main extends Application {
-   private Tools tools = new Tools();
+   private Tools herramientas = new Tools();
      private UserDAO userDAO = new UserDAO();
     
     private ConexionDAO connect = new ConexionDAO();
@@ -24,7 +24,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
        Parent root = FXMLLoader.load(getClass().getResource("/edu/tradivac/gui//login/login/login.fxml"));
-           primaryStage.setTitle("Expérience de voyage");
+           primaryStage.setTitle("Sol Travel Experience");
         Image icono = new Image(this.getClass().getResource("img/iconoAPP.png").toString());
         primaryStage.getIcons().add(icono);
         primaryStage.setScene(new Scene(root));
@@ -39,7 +39,7 @@ public class Main extends Application {
           //Inicio la conexión
         try {
 
-            if (connect.connect("root", "", "packs touristiques")) {
+            if (connect.connect("root", "", "tradivac")) {
                 conexion = connect.getConexion();
                 userDAO.setConex(conexion);
                 Parent root = null;
@@ -49,13 +49,13 @@ public class Main extends Application {
 
             HomeController homeController = loader.getController();
             homeController.setConexion(conexion);
-            homeController.setTools(tools);
+            homeController.setTools(herramientas);
             homeController.setconnect(connect);
             homeController.setuserDAO(userDAO);
            homeController.setMailuser("admin@gmail.com");
             homeController.homeInitialize();
 //menu.getChildren().addAll(root);
-        primaryStage.setTitle("Expérience de voyage ");
+        primaryStage.setTitle("Sol Travel Experience");
         Image icono = new Image(this.getClass().getResource("img/iconoAPP.png").toString());
         primaryStage.getIcons().add(icono);
         primaryStage.setScene(new Scene(root));
@@ -66,7 +66,7 @@ public class Main extends Application {
             System.out.println("exception : ");
             System.out.println(ex.getMessage());
             
-            tools.showAlertErr("Connexion à la base de données non établie");
+            herramientas.showAlertErr("No se ha establecido conexión con la base de datos");
         }
          
     }
