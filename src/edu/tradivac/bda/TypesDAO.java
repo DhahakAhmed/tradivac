@@ -35,7 +35,7 @@ public class TypesDAO {
     
 
     public ArrayList<Types> objetotype() throws SQLException {
-        ArrayList<Types> conjuntotypes = new ArrayList<>();
+        ArrayList<Types> types = new ArrayList<>();
 
         String sql = "SELECT * FROM service";
         PreparedStatement ps = conex.prepareStatement(sql);
@@ -44,14 +44,14 @@ public class TypesDAO {
 
         while (rs.next()) {
             String id = rs.getString("id_service");
-            String nombre = rs.getString("type");
+            String nombre = rs.getString("nom_service");
 
             Types type = new Types(id, nombre);
 
-            conjuntotypes.add(type);
+            types.add(type);
 
         }
-        return conjuntotypes;
+        return types;
     }
 
 }

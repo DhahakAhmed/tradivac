@@ -118,7 +118,7 @@ public class ActivitiesController {
         this.type = type;
     }
 
-    public void rellenarConPanes() {
+    public void remplirDePains() {
 
         Double posicionX = 100.;
         Double posicionY = 60.;
@@ -229,7 +229,7 @@ public class ActivitiesController {
             public void handle(MouseEvent me) {
                 //Este code lo crea en el momento del click. 
                 //No puede hacer referencias a variables de este code porque coge el ultimo valor
-                cargarDetalles(activity);
+                chargerDetails(activity);
             }
 
         });
@@ -302,7 +302,7 @@ public class ActivitiesController {
             @Override
             public void handle(MouseEvent me) {
 
-                mostrarMapa(activity);
+                afficherCarte(activity);
             }
 
         });
@@ -327,10 +327,10 @@ public class ActivitiesController {
     }
 
     @FXML
-    private void variarprice(MouseEvent event) {
+    private void prixVariable(MouseEvent event) {
         this.priceMaxSelecc = sliPrice.getValue();
         labprice.setText(String.format("%.0f€", this.priceMaxSelecc));
-        filtraractivities();
+        filtrerActivities();
     }
 
     @FXML
@@ -338,11 +338,11 @@ public class ActivitiesController {
         String idquality = "cal5";
         Node nodoQueHaGeneradoEvento = (Node) event.getSource();
         idquality = nodoQueHaGeneradoEvento.getId();
-        estiloEstrellas(idquality);
-        filtraractivities();
+        stylestars(idquality);
+        filtrerActivities();
     }
 
-    private void filtraractivities() {
+    private void filtrerActivities() {
         Double posicionX = 100.;
         Double posicionY = 50.;
 
@@ -356,7 +356,7 @@ public class ActivitiesController {
         }
     }
 
-    private void estiloEstrellas(String idquality) {
+    private void stylestars(String idquality) {
         switch (idquality) {
             case "cal1":
                 cal5.setStyle("-fx-fill: white; -fx-stroke: #0073ff");
@@ -401,7 +401,7 @@ public class ActivitiesController {
         }
     }
 
-    public void cargarDetalles(Activity activity) {
+    public void chargerDetails(Activity activity) {
 
         FXMLLoader loader;
         Parent root = null;
@@ -432,7 +432,7 @@ public class ActivitiesController {
 
     }
 
-    public void mostrarMapa(Activity activity) {
+    public void afficherCarte(Activity activity) {
         paneMap = new Pane();
         webView = new WebView();
         paneMap.setMinSize(800, 600);
@@ -453,7 +453,7 @@ public class ActivitiesController {
     }
 
     @FXML
-    private void borrarFiltros(ActionEvent event) {
+    private void clearFilters(ActionEvent event) {
 
         sliPrice.setValue(100);
         labprice.setText(String.format("%.0f€", sliPrice.getValue()));
@@ -462,7 +462,7 @@ public class ActivitiesController {
         cal3.setStyle("-fx-fill: #0073ff");
         cal2.setStyle("-fx-fill: #0073ff");
         cal1.setStyle("-fx-fill: #0073ff");
-        rellenarConPanes();
+        remplirDePains();
     }
 
 }
