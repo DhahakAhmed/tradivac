@@ -4,14 +4,33 @@
  */
 package edu.tradivac.tests;
 
+import edu.tradivac.entities.Reclamation;
+import edu.tradivac.utils.MySQLConnection;
+import edu.tradivac.services.ReclamationCrud;
+import java.sql.Date;
+import java.sql.Timestamp;
+
 /**
  *
- * @author wassou
+ * @author Meriem
  */
 public class Main {
-    
+
     public static void main(String[] args) {
-        
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        Reclamation r1 = new Reclamation(4, "esprit", "esprit", timestamp);
+        System.err.println(r1.getDate());
+        ReclamationCrud crd = new ReclamationCrud();
+
+        //crd.addReclamation(r1);
+        //crd.deleteReclamation(13);
+         crd.displayReclamation();
+        //crd.updateReclamation(r1);
+        //crd.getReclamationsByUserId(123);
+        //crd.getReclamationCountByUserId(123);
+        //crd.getReclamationCountByUserIdAndDate(123);
+       // crd.getReclamationCountByUserId(4);
+
     }
-    
+
 }
