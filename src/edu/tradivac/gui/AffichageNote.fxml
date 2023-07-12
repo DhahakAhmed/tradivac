@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="600.0" style="-fx-background-color: light blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.tradivac.gui.AffichageNoteController">
+   <children>
+      <TableView fx:id="TableNote" layoutX="7.0" layoutY="78.0" prefHeight="172.0" prefWidth="334.0">
+        <columns>
+          <TableColumn fx:id="id_note_paquet" prefWidth="75.0" text="id_note_paquet" visible="false" />
+            <TableColumn fx:id="id_user" prefWidth="109.0" text="id_user" visible="false" />
+          <TableColumn fx:id="id_paquet" prefWidth="75.0" text="id_paquet" visible="false" />
+            <TableColumn fx:id="nb_etoiles" prefWidth="75.0" text="nb_etoiles" />
+            <TableColumn fx:id="commentaire" prefWidth="109.0" text="commentaire" />
+        </columns>
+      </TableView>
+      <Text layoutX="185.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Affichage Note" wrappingWidth="395.00000846385956">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Button layoutX="313.0" layoutY="349.0" mnemonicParsing="false" onAction="#addAction" prefHeight="31.0" prefWidth="74.0" text="Ajouter" />
+      <Button layoutX="402.0" layoutY="349.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="74.0" text="Update" />
+      <Button layoutX="498.0" layoutY="349.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="74.0" text="Delete" />
+      <TextField fx:id="tfcom" layoutX="102.0" layoutY="322.0" prefHeight="76.0" prefWidth="149.0" />
+      <Text fill="#1e0a0a" layoutX="4.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nbr Etoiles">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#1e0a0a" layoutX="2.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commentaire">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="160.0" fitWidth="200.0" layoutX="376.0" layoutY="84.0">
+         <image>
+            <Image url="@../../../IMG_BLOG_AVIS_CLIENT_1-1024x822.jpg" />
+         </image>
+      </ImageView>
+      <Rating layoutX="97.0" layoutY="273.0" rating="0.0" />
+   </children>
+</AnchorPane>

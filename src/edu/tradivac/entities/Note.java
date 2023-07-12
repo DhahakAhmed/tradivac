@@ -4,10 +4,7 @@
  */
 package edu.tradivac.entities;
 
-/**
- *
- * @author wassou
- */
+
 public class Note {
     
 }

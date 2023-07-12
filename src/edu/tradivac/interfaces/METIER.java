@@ -4,18 +4,10 @@
  */
 package edu.tradivac.interfaces;
 
-import java.util.List;
-
 /**
  *
- * @author wassou
- * @param <T>
+ * @author User
  */
-public interface INoteCrud<T>{
-    public void addEntity(T t);
-    
-    public List<T> displayEntities();
-    
-    public void updateEntity (T t);
-    public void deleteEntity(int id);
+public interface METIER <T>{
+    public String controle (String phrase, String[] motsListe); 
 }
