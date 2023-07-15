@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: light blue;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.tradivac.gui.AfficheInterfaceReclamationController">
+    <stylesheets>
+        <URL value="@afficheinterfacereclamation.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableaurec" layoutX="26.0" layoutY="70.0" prefHeight="264.0" prefWidth="383.0">
+        <columns>
+          <TableColumn fx:id="id_reclamation" prefWidth="75.0" text="id_reclamation" visible="false" />
+          <TableColumn fx:id="id_touriste" prefWidth="75.0" text="id_touriste" visible="false" />
+            <TableColumn fx:id="description" prefWidth="98.0" text="objet" />
+            <TableColumn fx:id="objet" prefWidth="122.0" text="description" />
+            <TableColumn fx:id="date" prefWidth="151.0" text="date" />
+        </columns>
+      </TableView>
+      <Button layoutX="331.0" layoutY="348.0" mnemonicParsing="false" onAction="#addReclamation" prefHeight="25.0" prefWidth="61.0" text="Ajouter" />
+      <Text fill="#141414" layoutX="92.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Affichage Des Reclamations">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Button layoutX="421.0" layoutY="349.0" mnemonicParsing="false" onAction="#updateReclamation" text="Modifier" />
+      <Button layoutX="511.0" layoutY="348.0" mnemonicParsing="false" onAction="#deleteReclamation" text="Supprimer" />
+      <Label layoutX="26.0" layoutY="273.0" text="Objet" textFill="#f8f5f5" />
+      <Label layoutX="26.0" layoutY="309.0" text="Description" textFill="#f8f5f5" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="365.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="125.0" fitWidth="156.0" layoutX="422.0" layoutY="140.0">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
